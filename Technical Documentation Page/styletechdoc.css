@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    background-color: #2C3639;
+    color: #DCD7C9;
+    font-family: 'Maven Pro', sans-serif;
+
+}
+
+html {
+    display: block;
+}
+
+
+
+#navbar {
+width: 300px;
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+margin: 0 ;
+border-right: 5px solid black;
+}
+
+#nav-title {
+    text-align: center;
+    padding: 0px 0px;
+    font-size: 25px;
+    background-color: #2C3639;
+    color: #A27B5C;
+    font-family: 'Maven Pro', sans-serif;
+
+}
+
+nav ul  {
+padding: 0 15px 0;
+}
+
+.nav-link {
+    display: block;
+    list-style: none;
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #DCD7C9;
+}
+
+
+#main-doc{
+    
+    position: absolute; 
+    top: 0;
+    left: 300px;
+    padding: 20px;
+}
+
+header {
+    font-size: 28px;
+    font-weight: 300;  
+    background-color: #3F4E4F;
+    color: #DCD7C9;
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-weight: 600;
+}
+
+code {
+    background-color: #A27B5C;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 10px;
+    display: inline-block;
+}
+
+img {
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+    left: 10%;
+}
+
+.img1 {
+    width: 300px;
+    height: 100%;
+} 
+
+.img2 {
+    width: 400px;
+    height: 100%;
+}
+
+span {
+    font-style: italic;
+    text-decoration: underline;
+    padding-top: 3px;
+}
+
+.note {
+    text-align: center;
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.note p {
+    color: #A27B5C;
+    font-style: italic;
+}
+.note a {
+    color: #A27B5C;
+}
+
+@media (max-width:830px){
+
+    nav { 
+        text-align: center;
+    }
+    
+    #nav-title {
+        text-align: center;
+    }
+
+    #navbar {
+        position:absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        border: none;
+        z-index: 1;
+        height: auto;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 345px; 
+        left: -10px;
+    }
+
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    code {
+        display: flex;
+        justify-content: space-between;
+    }
+}
