@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: #000;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  background-color: #ccc;
+  border-radius: 10px;
+  max-width: 1000px;
+  padding: 10px;
+
+}
+
+#main-top {
+padding: 20px;
+width: 100%;
+}
+
+#main-top img {
+  max-width: 200px;
+  float: left;
+  display: block;
+}
+
+#title {
+  font-weight: 700;
+  font-size: 50px;
+  display: inline-block;
+  padding: 10px 120px;
+  text-shadow: 4px 4px 10px slategrey;
+  width: auto;
+  height: 100%;
+  font-family: 'Poller One', cursive;
+
+}
+
+.main-p {
+  display: block;
+  text-align: center;
+  height: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+#img-div {
+  max-width: 780px;
+  margin: 20px auto 0px;
+  text-align: center;
+  display: block;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #ddd;
+  padding: 10px;
+}
+
+#image {
+    max-width: 100%;
+    min-width: 300px;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-caption {
+  display: block;
+}
+
+#tribute-info {
+  padding: 20px 100px 50px;
+  color: #000 ;
+}
+
+#tribute-info .info h2 {
+  padding-top: 20px;
+  font-family: 'Poller One', cursive;
+
+}
+
+#tribute-info h3 {
+  text-decoration: underline 1px;
+  padding-top: 5px;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  text-align: left;
+  margin-left: -10px;
+}
+
+.aditional {
+  padding-top: 30px;
+  font-size: 20px;
+  font-style: oblique;
+  text-align: center;
+}
+.aditional a {
+  text-decoration: none;
+  font-weight: bolder;
+  color: dimgrey;
+}
+
+.aditional a:hover {
+  color:darkslategrey
+}
+
+
+@media (max-width:900px) {
+  #main {
+      margin: 10px 10px;
+  }
+
+  #main-top div {
+      display: flex;
+      width: auto;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+
+  #title {
+    font-size: 30px;
+    padding: 10px 50px;
+  }
+
+  #tribute-info {
+    padding: 0.5px 20px;
+  margin: 20px auto;
+}
+
+
+@media (max-width:500px) {
+  #main-top div {
+      display: flex;
+      width: auto;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  #title-top {
+    margin: 1px auto;
+    height: 100%;
+    font-size: 25px;
+    padding: 10px 50px;
+    text-align: center;
+  }
+
+}
