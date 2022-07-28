@@ -1,0 +1,227 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-one: rgb(231, 224, 201);
+    --color-two: rgb(193, 207, 192);
+    --color-three: rgb(107, 122, 161);
+    --color-four: rgb(17, 50, 77);
+}
+
+/* NAV---------------------------------------------------- */
+#navbar {
+    width: 100%;
+    height: auto;
+    background: var(--color-three);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+#navbar ul {
+    list-style: none;
+    display: inherit;                   
+}
+
+#navbar li a{
+    display: block;
+    padding: 20px 40px 20px 40px;
+    display: block;
+    text-decoration: none;
+    color: var(--color-two);
+    font-size: 20px;
+    transition-duration: 1s;
+}
+
+#navbar li a:hover {
+    color: var(--color-one);
+    transform: scale(1.2);
+    border-bottom: 3px solid var(--color-two);
+    padding-bottom: 5px;
+}
+
+
+/* MAIN-SECTION------------------------------------------------------------- */
+
+main {
+    display: block;
+    padding-top: 60px;
+    background-color: var(--color-two);
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, var(--color-two), var(--color-three));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+font-family: 'Lexend Deca', sans-serif;
+    font-size: 80px;
+    color: var(--color-four);
+    transition-duration: 2s;
+}
+
+
+h2 {
+    font-family: 'Cutive Mono', monospace;
+    padding: 20px 0px;
+    color: var(--color-four);
+    font-size: 50px;
+    font-weight: 100;
+    transition-duration: 1.3s
+}
+
+h1:hover, h2:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(6px 6px 10px #fff);
+    letter-spacing: 5px;
+}
+
+
+h3 {
+    color: var(--color-four);
+    text-align: center;
+    padding: 20px 0px;
+    font-weight: 100;
+    font-size: 35px;
+}
+
+                /* PROJECT SECTION-------------------------------- */
+
+.projects-grid {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 50px;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 180px;
+}
+
+.project-tile {
+    max-width: 500px;
+    max-height: 330px;
+    background: var(--color-one);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(134, 134, 134);
+    text-align: center;
+    padding: 20px;
+}
+
+
+.project-img {
+    width: 90%;
+    border-radius: 15px;
+    transition-duration: 1s;
+}
+
+.project-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgb(134, 134, 134);;
+}
+
+.project-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.project-descp {
+    padding-top: 5px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+
+/* FOOTER-------------------------------------------------------------------------------------- */
+
+footer {
+    background:  var(--color-two);
+    padding: 50px;
+    text-align: center;
+    font-size: 18px;
+    /* border-top: 2px solid var(--color-four); */
+}
+
+footer b {
+    color: rgb(65, 21, 48);
+}
+
+footer a {
+    text-decoration: none;
+    color:var(--color-four);
+    font-weight: 600;
+}
+
+footer a:hover {
+    color: var(--color-four);
+    font-weight: 700;
+}
+
+
+
+/* MEDIA QUERIE--------------------------------------   */
+
+@media screen and (max-width: 700px) {
+    main {
+            padding-top: 45px;
+        }
+
+    #navbar li a {
+            padding: 15px 35px 15px 35px;
+            font-size: 15px;
+        }
+
+    h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+
+    h2 {
+        padding: 15px 0px;
+        font-size: 35px;
+        font-weight: 100;
+    }
+
+    h3 {
+    padding: 15px 0px;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.projects-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px 40px;
+    padding-bottom: 70px;
+}
+
+.project-tile {
+    min-width: 300px;
+    min-height: 130px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    font-size: 16px;
+    padding: 30px;
+}
+
+}
+
+
